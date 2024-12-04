@@ -110,13 +110,13 @@ a {
     @media (min-width: 992px) {
       .hero .intro-excerpt {
         max-width: 450px; } }
-  .hero h1 {
+  .hero h3 {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 30px; }
     @media (min-width: 1400px) {
-      .hero h1 {
-        font-size: 54px; } }
+      .hero h3 {
+        font-size: 35px; } }
   .hero p {
     color: rgba(255, 255, 255, 0.5);
     margin-botom: 30px; }
