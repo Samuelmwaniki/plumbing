@@ -126,46 +126,52 @@
                 </div>
               </div>
 
-              <form>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="text-black" for="fname">First name</label>
-                      <input type="text" class="form-control" id="fname">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="text-black" for="lname">Last name</label>
-                      <input type="text" class="form-control" id="lname">
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="text-black" for="email">Email address</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-
-                <div class="form-group mb-5">
-                  <label class="text-black" for="message">Message</label>
-                  <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
-              </form>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-  </div>
-
+			  <form id="contactForm">
+				<div class="row">
+				  <div class="col-6">
+					<div class="form-group">
+					  <label class="text-black" for="fname">First name</label>
+					  <input type="text" class="form-control" id="fname" required>
+					</div>
+				  </div>
+				  <div class="col-6">
+					<div class="form-group">
+					  <label class="text-black" for="lname">Last name</label>
+					  <input type="text" class="form-control" id="lname" required>
+					</div>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="text-black" for="email">Email address</label>
+				  <input type="email" class="form-control" id="email" required>
+				</div>
+				<div class="form-group mb-5">
+				  <label class="text-black" for="message">Message</label>
+				  <textarea class="form-control" id="message" cols="30" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
+			  </form>
+			  
+			  <!-- Success Message -->
+			  <div id="successMessage" style="display: none; margin-top: 20px;" class="alert alert-success">
+				Thank you! Your message has been sent successfully.
+			  </div>
+			  
+			  <script>
+				// JavaScript to handle form submission and display success message
+				document.getElementById('contactForm').addEventListener('submit', function(event) {
+				  event.preventDefault(); // Prevent the default form submission behavior
+				  
+				  // Show the success message
+				  const successMessage = document.getElementById('successMessage');
+				  successMessage.style.display = 'block';
+			  
+				  // Optionally reset the form fields
+				  this.reset();
+				});
+			  </script>
+			  
+</div></div>
   <!-- End Contact Form -->
 
 		
@@ -207,10 +213,10 @@
 						<p class="mb-4">All services are provided by licensed and insured professionals. Prices may vary based on service complexity.</p>
 
 						<ul class="list-unstyled custom-social">
-							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100007627965643&mibextid=ZbWKwL"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<!-- <li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li> -->
+							<li><a href="https://www.instagram.com/josephoballa?igsh=MWxoOTRpZTU1d3R0Yw=="><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="https://www.linkedin.com/in/obplumber?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="fa fa-brands fa-linkedin"></span></a></li>
 						</ul>
 					</div>
 
